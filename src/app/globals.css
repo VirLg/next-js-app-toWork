@@ -31,3 +31,8 @@ body {
     text-wrap: balance;
   }
 }
+.active:hover {
+  position: relative;
+  overflow: hidden;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
