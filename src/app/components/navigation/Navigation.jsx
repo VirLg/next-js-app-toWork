@@ -8,13 +8,15 @@ import Logo from '../icons/logo.svg';
 
 const Navigation = ({ navItems }) => {
   return (
-    <div className="flex">
+    <div className="container flex">
       <Link href="/">
-        <img src={Logo.src} alt="logo" width={'60px'} />
+        <img src={Logo.src} alt="logo" width={'60px'} height={'60px'} />
       </Link>
-      <NavigationJobs />
-      <NavigationTalent />
-      <NavigationResources />
+      <div className="flex gap-6 w-[700px] justify-between ml-[100px] relative">
+        <NavigationJobs />
+        <NavigationTalent />
+        <NavigationResources />
+      </div>
     </div>
   );
 };

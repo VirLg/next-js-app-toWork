@@ -4,7 +4,7 @@ import Overley from '../overley/Overley';
 
 export default function Header() {
   return (
-    <header className="container bg-sky-100 h-[188px] p-6 m-auto fixed">
+    <header className="container  header h-[120px] p-6 m-auto fixed">
       <div className="flex  justify-between items-center">
         <Navigation />
       </div>
