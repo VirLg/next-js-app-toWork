@@ -12,7 +12,7 @@ const Navigation = ({ navItems }) => {
       <Link href="/">
         <img src={Logo.src} alt="logo" width={'60px'} height={'60px'} />
       </Link>
-      <div className="flex gap-6 w-[700px] justify-between ml-[300px] relative">
+      <div className="flex gap-6 w-[700px] justify-between ml-[250px] relative">
         <NavigationJobs />
         <NavigationTalent />
         <NavigationResources />
