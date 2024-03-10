@@ -1,13 +1,13 @@
 'use client';
 import React from 'react';
 
-const Checkbox = ({ idx, data, handleCheckLoc }) => {
+const CheckboxFunction = ({ idx, data, handleCheckLocFunction }) => {
   const handleCheck = e => {
     const value = {
       checked: e.target.checked,
       id: e.target.id,
     };
-    handleCheckLoc(value);
+    handleCheckLocFunction(value);
   };
   console.log('dataElem', data);
   return (
@@ -21,8 +21,9 @@ const Checkbox = ({ idx, data, handleCheckLoc }) => {
                 id={el.idxEl}
                 onChange={handleCheck}
                 className="mr-4"
-                // value={checka?.complplited}
+                // value={el.checked}
                 checked={el.checked}
+                width={'35px'}
               />
               {el.label}
             </label>
@@ -33,4 +34,4 @@ const Checkbox = ({ idx, data, handleCheckLoc }) => {
   );
 };
 
-export default Checkbox;
+export default CheckboxFunction;
