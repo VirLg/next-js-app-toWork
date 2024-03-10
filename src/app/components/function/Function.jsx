@@ -23,7 +23,7 @@ const Function = () => {
   return (
     <div className="mt-6">
       <hr />
-      <h2>Location Type</h2>
+      <h2>Function</h2>
 
       <CheckboxFunction
         handleCheckLocFunction={handleCheckLocFunction}
