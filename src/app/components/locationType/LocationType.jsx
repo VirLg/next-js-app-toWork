@@ -4,7 +4,9 @@ import { LokationData } from '../utils/data/dataSidebar';
 import Checkbox from '../utils/checkbox/Checkbox';
 import { abort } from 'process';
 const LocationType = () => {
-  const [check, setChecked] = useState([]);
+  const [data, setData] = useState(LokationData);
+  // const [dataComplited, setDataComplited] = useState(null);
+
   // const checkedValue = LokationData.reduce(
   //   (a, b) => ({
   //     ...a,
@@ -13,30 +15,37 @@ const LocationType = () => {
   //   }),
   //   {}
   // );
-  const handleCheckLoc = ({ checked, id }) => {
-    const c = [{ idx: id, complplited: checked }];
-    // console.log('value.checked', checked);
-    // console.log('value.checked', id);
+  const handleCheckLoc = value => {
+    console.log('value', value);
 
-    check.reduce(
-      (_, val) => ({
-        ...val,
-      }),
-      []
-    );
-
-    console.log('a', check);
+    const a = data.map((el, idx) => {
+      if (idx === Number(value.id)) {
+        return {
+          ...el,
+          checked: value.checked,
+        };
+      } else {
+        return el;
+      }
+    });
+    //   // const c = [{ idx: id, complplited: checked }];
+    //   // console.log('value.checked', checked);
+    //   // console.log('value.checked', id);
+    //   // check.reduce(
+    //   //   (_, val) => ({
+    //   //     ...val,
+    //   //   }),
+    //   //   []
+    //   // );
+    setData(a);
   };
-  setChecked(handleCheckLoc);
+  console.log('first', data);
   return (
     <div className="mt-6">
       <hr />
       <h2>Location Type</h2>
-      <Checkbox
-        data={LokationData}
-        handleCheckLoc={handleCheckLoc}
-        // checka={check}
-      />
+
+      <Checkbox handleCheckLoc={handleCheckLoc} data={data} />
     </div>
   );
 };

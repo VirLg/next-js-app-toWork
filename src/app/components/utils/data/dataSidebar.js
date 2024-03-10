@@ -1,7 +1,7 @@
 export const LokationData = [
-  { label: 'Remote', option: false },
-  { label: 'Onsite', option: false },
-  { label: 'Hybrid', option: false },
+  { label: 'Remote', checked: false, idxEl: 0 },
+  { label: 'Onsite', checked: false, idxEl: 1 },
+  { label: 'Hybrid', checked: false, idxEl: 2 },
 ];
 export const FunctionData = [
   { label: 'Accounting & Finance' },
