@@ -6,6 +6,12 @@ const ContentBlock = () => {
       <li>
         <ContentItem />
       </li>
+      <li>
+        <ContentItem />
+      </li>
+      <li>
+        <ContentItem />
+      </li>
     </ul>
   );
 };

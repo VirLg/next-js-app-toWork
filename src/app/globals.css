@@ -55,14 +55,15 @@ img {
 }
 
 .link {
-  text-decoration: none;
+  /* text-decoration: none; */
   /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
-/* li {
-  text-decoration: none;
-} */
+.card-li {
+  padding-left: 10px;
+}
+
 .list {
-  list-style: none;
+  /* list-style: none; */
   padding: 0;
   margin: 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -85,4 +86,42 @@ img {
   position: absolute;
   top: 300;
   left: 50;
+}
+.card-font {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+
+  /* margin: 0; */
+}
+.clock::before {
+  display: inline-block;
+  content: '';
+  width: 22px;
+  height: 22px;
+  background-image: url('../app/components/icons/clock-two-svgrepo-com.svg');
+  background-size: contain;
+  margin-right: 12px;
+}
+.bag::before {
+  display: inline-block;
+  content: '';
+  width: 22px;
+  height: 22px;
+  background-image: url('../app/components/icons/briefcase-svgrepo-com.svg');
+  background-size: contain;
+  margin-right: 12px;
+}
+.wallet::before {
+  display: inline-block;
+  content: '';
+  width: 22px;
+  height: 22px;
+  background-image: url('../app/components/icons/wallet-svgrepo-com.svg');
+  background-size: contain;
+  align-items: baseline;
+  margin-right: 12px;
 }
