@@ -5,8 +5,7 @@ import BanerPage from './components/baner/BanerPage';
 export default function Home() {
   return (
     <main className="">
-      <div className="container pt-[124px] ">
-        <BanerPage />
+      <div className="container pt-[168px] ">
         <div className="flex">
           <div>
             <Sidebar />

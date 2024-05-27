@@ -2,7 +2,9 @@ import React from 'react';
 
 const BanerPage = () => {
   return (
-    <div className="h-[120px] w-[100%] bg-sky-50 mb-1">BanerPage</div>
+    <div className="h-[70px] w-[80%] bg-lime-400 m-auto">
+      BanerPage
+    </div>
   );
 };
 

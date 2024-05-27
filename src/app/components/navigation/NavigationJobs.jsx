@@ -5,7 +5,7 @@ const NavigationJobs = () => {
   return (
     <div className="group">
       <h2 className="card-one">Navigation Jobs </h2>
-      <div className="absolute top-[100px] left-[-60px]  group-hover:bg-sky-500 w-[280px] h-[100px]">
+      <div className="absolute top-[38px] left-[-60px]  group-hover:bg-sky-500 w-[280px] h-[100px]">
         <ul className="group invisible hover:bg-sky-500 group-hover:visible ">
           {NavigationsItem.NavigationResource.map((el, idx) => {
             return (
